@@ -89,6 +89,7 @@ val Welcome = FC<WelcomeProps> { props ->
             }
             type = InputType.text
             value = name
+
             onChange = { event ->
                 name = event.target.value
             }
@@ -98,14 +99,14 @@ val Welcome = FC<WelcomeProps> { props ->
         css {
             position = Position.absolute
             top = 50.px
-            right = 180.px
+            right = 80.px
         }
         h3 {
             +"You are at $name"
         }
         img {
 
-            src = "https://via.placeholder.com/640x360.png?text=Video+Player+Placeholder"
+            src = "https://media.istockphoto.com/id/1352603244/photo/shot-of-an-unrecognizable-businessman-working-on-his-laptop-in-the-office.jpg?s=1024x1024&w=is&k=20&c=mTABddPRSU1r_hCBpknMjJbCIrJAicjjXGSU42rx-YI="
             onClick={window.alert("Click me $name")}
         }
     }
